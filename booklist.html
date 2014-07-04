@@ -1,0 +1,47 @@
+
+
+ <html>
+  <head>
+   <meta charset="utf-8"/>
+   <title>About Me</title>
+ </head>
+ <body>
+   <h1>My Book List</h1>
+
+
+    	<script>
+
+    	var books = [
+	{title: "kite Runner",
+	 authur: "khaled hussaini",
+	 read: "yes"},
+
+	{title: "A", 
+	 authur: "B", 
+	 read: "no"},
+
+	{title: "C", 
+	 authur: "D", 
+	 read: "yes"},
+
+	{title: "E", 
+	 authur: "F", 
+	 read: "no"}
+	];
+
+		var body = document.getElementsByTagName('body')[0];
+		for (var i = 0 ; i < books.length; i++) {
+			var creatP = document.createElement('p');
+			var title = document.createTextNode("title:" + books[i].title);
+			var authur = document.createTextNode("authur:" + books[i].authur);
+			creatP.appendChild(title)
+			creatP.appendChild(authur)
+			body.appendChild(creatP)
+		};
+
+			
+    	</script>
+
+
+  </body>
+ </html>
