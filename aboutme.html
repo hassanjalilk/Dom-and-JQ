@@ -1,0 +1,49 @@
+
+
+
+<!DOCTYPE html>
+ <html>
+  <head>
+  	<style type="text/css">
+
+  	.listitem{
+  		color: red;
+  	}
+
+  	</style>
+   <meta charset="utf-8"/>
+   <title>About Me</title>
+ </head>
+ <body>
+   <h1>About Me</h1>
+
+   <ul>
+     <li>Nickname: <span id="nickname"></span>
+     <li>Favorites:  <span id="favorites"></span>
+     <li>Hometown: <span id="hometown"></span>
+    </ul>
+
+    	<script>
+
+    		var body = document.getElementsByTagName('body')[0];
+    		body.style['font-family'] = "Arial";
+
+    		var nickname = document.getElementById('nickname').innerHTML = "H";
+    		var favorites = document.getElementById('favorites').innerHTML = "a";
+    		var hometown = document.getElementById('hometown').innerHTML = "b";
+
+    		var findLi = document.getElementsByTagName('li');
+    		for (var i = 0 ; i < findLi.length; i++) {
+    			findLi[i].className = "listitem";
+	   		}
+
+    		var image = document.createElement("img");
+    		image.setAttribute('src', 'myanchor');
+    		body.appendChild(image)
+
+
+    	</script>
+
+
+  </body>
+ </html>
